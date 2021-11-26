@@ -66,7 +66,7 @@ section{
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-rows:[f1]40px[f2]40px[f3]150px[f4]40px[f5]250px[f6]50px[f7];
+    grid-template-rows:[f1]40px[f2]40px[f3]150px[f4]40px[f5]270px[f6]50px[f7];
     grid-template-columns: [c1]30%[c2]auto[c3];
     font-weight: bold;
 }
@@ -116,9 +116,17 @@ section{
     grid-column-end: c3;
     grid-row-start: f3;
     grid-row-end: f4;  
+}
+.descripcio div{
     display: flex;
-    flex-direction: column ;
-    align-self: center;
+    justify-content: space-between;
+}
+.descripcio div p:first-child{
+    flex-basis: 20%;
+}
+.descripcio div p:nth-child(2){
+    flex-basis: 80%;
+    color: gray;
 }
 .descripcio p{
     padding: 5px;
@@ -238,7 +246,7 @@ button{
     background-color: transparent;
     border: 2px solid rgb(105, 38, 105) ;
     border-radius: 6px;
-    padding: 16px 322px;
+    padding: 16px 370px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
